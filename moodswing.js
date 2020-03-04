@@ -10,10 +10,6 @@ let src = [];
 let mobjects = [];
 var cnv;
 
-
-var logo1, logo2, logo3;
-
-
 class Mobject {
     constructor(id, src, xax, yax, wpix, hpix, freqmin, freqmax) {
         this.id = id;
@@ -80,15 +76,6 @@ function setup() {
         let m = new Mobject(id, src, xax, yax, wpix, hpix, freqmin, freqmax);
         mobjects.push(m);
     }
-
-    logo1 = loadImage("/ms-all/part36.png");
-    logo2 = loadImage("/ms-all/part37.png");
-    logo3 = loadImage("/ms-all/part38.png");
-
-    sou1 = loadImage("/ms-all/sou1.png");
-    sou2 = loadImage("/ms-all/sou2.png");
-
-
 }
 
 function windowResized() {
@@ -146,18 +133,6 @@ for (i = 0; i < 84; i++) {
  if (key == '1') {
  mobjects[i].reset();
 }}
-
-
-
-   if (key == 'q') {
-     image(logo1, -400, -400, 800, 800);
-   }
-   if (key == 'w') {
-     image(logo2, -400, -400, 800, 800);
-   }
-   if (key == 'r') {
-     image(logo3, -400, -400, 800, 800);
-   }
 
 
 }
